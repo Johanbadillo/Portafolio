@@ -110,13 +110,12 @@ section h2 {
     display: grid;
     grid-template-columns: auto auto;
     gap: 1.5vw;
+    padding-top: 2vw;
 }
 
 .project-card {
     background: white;
-    border: 0.2vh solid transparent;
-    border-left: 2px solid #3498db;
-    border-right: 2px solid #3498db;
+    border: 2px solid #3498db;
     border-radius: 3%;
     padding: 1.5vw;
     box-shadow: 0 0.4vh 0.5vh rgba(0, 0, 0, 0.322);
@@ -125,7 +124,6 @@ section h2 {
 
 .project-card:hover {
     transform: translateY(-0.5vh);
-    border-color: #3498db;
 }
 
 .project-card h3 {
@@ -152,6 +150,7 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5vw;
+    padding-top: 2vw;
 }
 
 .skill {
@@ -163,7 +162,6 @@ section h2 {
 }
 .contact{
     padding-top: 2vw;
-    
 }
 
 .contact-icons {
