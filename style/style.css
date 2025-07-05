@@ -20,24 +20,24 @@ header {
 
 header h1 {
     font-size: 4vw;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5vh;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 2vw;
 }
 
 nav {
     background: #333;
-    padding: 1rem;
+    padding: 1.5vh;
     text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
-    font-size: 1.1rem;
+    margin: 0 2vw;
+    font-size: 2vw;
     position: relative;
     transition: color 0.3s;
 }
@@ -50,9 +50,9 @@ nav a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 0.2vh;
     background: #3498db;
-    bottom: -5px;
+    bottom: -0.5vh;
     left: 0;
     transition: width 0.3s ease;
 }
@@ -62,20 +62,20 @@ nav a:hover::after {
 }
 
 .container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    max-width: 90vw;
+    margin: 2vh auto;
+    padding: 0 2vw;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 2vh;
 }
 
 section h2 {
-    font-size: 1.8rem;
+    font-size: 3vw;
     color: #2c3e50;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #3498db;
+    margin-bottom: 1vh;
+    border-bottom: 0.2vh solid #3498db;
     display: inline-block;
 }
 
@@ -83,8 +83,6 @@ section h2 {
     display: flex;
     align-items: center;
     gap: 2vw;
-    margin-right: -5vw;
-    margin-left: -5vw;
 }
 
 .about img {
@@ -111,33 +109,33 @@ section h2 {
 .projects-grid {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 1.5rem;
+    gap: 1.5vw;
 }
 
 .project-card {
     background: white;
-    border: 2px solid transparent;
+    border: 0.2vh solid transparent;
     border-left: 2px solid #3498db;
     border-right: 2px solid #3498db;
     border-radius: 3%;
-    padding: 1rem;
+    padding: 1.5vw;
     box-shadow: 0 0.4vh 0.5vh rgba(0, 0, 0, 0.322);
     transition: transform 0.3s, border-color 0.3s;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5vh);
     border-color: #3498db;
 }
 
 .project-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.2vw;
+    margin-bottom: 0.5vh;
 }
 
 .project-card p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.8vw;
+    margin-bottom: 0.5vh;
 }
 
 .project-card a {
@@ -153,23 +151,61 @@ section h2 {
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.5vw;
 }
 
 .skill {
     background: #3498db;
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: 0.5vh 1vw;
+    border-radius: 20vw;
+    font-size: 1.6vw;
+}
+.contact{
+    padding-top: 2vw;
+    
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-bottom: 1vh;
+    padding-top: 2vw;
+}
+
+.contact-icons a img {
+    width: 5vw;
+    height: 10vh;
+    transition: transform 0.3s;
+}
+
+.contact-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.contact p {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 0.5vh;
+}
+
+.contact p a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
 }
 
 footer {
-background: #333;
-color: white;
-text-align: center;
-padding: 1rem;
-margin-top: 2rem;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5vh;
+    margin-top: 2vh;
 }
 
 @media (max-width: 600px) {
@@ -214,6 +250,19 @@ section h2 {
 
 .skill {
     font-size: 2vw;
+}
+
+.contact h3 {
+    font-size: 3vw;
+}
+
+.contact-icons a img {
+    width: 8vw;
+    height: 4vh;
+}
+
+.contact p {
+    font-size: 2.5vw;
 }
 
 .container {
