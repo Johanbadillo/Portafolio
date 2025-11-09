@@ -506,3 +506,11 @@ body.modo-claro .boton-tema:hover {
     background: #3b82f6;
     color: white;
 }
+
+body.modo-claro .contenido-sobre-mi p {
+    color: #202020bd;
+}
+
+body.modo-claro .contenido-tarjeta p{
+    color: #202020bd;
+}
