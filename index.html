@@ -1,100 +1,128 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Johan Monsalve</title>
-  <link rel="stylesheet" href="./style/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Johan Monsalve | Desarrollador</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-  <header>
-    <h1>Johan Monsalve</h1>
-    <p>Desarrollador de software en Formación</p>
+  <!-- Botón para cambiar tema -->
+  <button id="boton-tema" class="boton-tema" title="Cambiar tema">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Encabezado principal -->
+  <header class="encabezado-principal">
+    <div class="contenido-encabezado">
+      <!-- Logo JM con efecto -->
+      <div class="logo-jm">
+        <span>JM</span>
+      </div>
+      <h1 class="titulo-animado">Johan Monsalve</h1>
+      <p class="subtitulo">Desarrollador de Software en Formación</p>
+      <p class="frase-destacada">Construyo soluciones con código limpio y diseño funcional.</p>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">Sobre Mí</a>
-    <a href="#projects">Proyectos</a>
-    <a href="#skills">Habilidades</a>
-    <a href="#contact">Contacto</a>
+  <!-- Menú de navegación -->
+  <nav class="menu-navegacion">
+    <a href="#sobre-mi">Sobre Mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 
-  <div class="container">
-    <section id="about" class="about">
-      <h2>Sobre Mí</h2>
-      <img src="./img/fotoPerfil.jpeg" alt="Foto de Johan Monsalve">
-      <p>Soy estudiante de desarrollo de software, apasionado por crear soluciones web funcionales y visualmente atractivas. Domino Python basico, Git, HTML, CSS y JavaScript básico, con experiencia en proyectos académicos que incluyen diseños responsivos y animaciones como efectos de hover. Mi inteligencia emocional me permite adaptarme a cambios rápidamente, analizar situaciones con empatía y colaborar eficazmente en equipo. Destaco por mis habilidades sociales, resolviendo conflictos con comunicación clara y trabajando bajo presión para cumplir plazos.</p>
-    </section>
-
-    <section id="projects" class="projects">
-      <h2>Proyectos</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Proyecto Python</h3>
-          <p>Repositorio en donde desarrollé un programa en Python para gestionar gastos diarios, con registro, visualización, filtrado y cálculo por categorías (comida, transporte, etc.). Utiliza JSON para almacenar datos y genera reportes en texto. Interfaz de consola intuitiva con menús y tablas visuales, diseñada para simplicidad y usabilidad.</p>
-          <p><a href="https://github.com/Johanbadillo/Python_Proyecto" target="_blank">Ver Codigo</a></p>
+  <!-- Contenedor principal -->
+  <main class="contenedor-principal">
+    
+    <!-- Sección: Sobre Mí -->
+    <section id="sobre-mi" class="seccion">
+      <h2 class="titulo-seccion">Sobre Mí</h2>
+      <div class="contenido-sobre-mi">
+        <div class="foto-perfil">
+          <img src="./img/fotoPerfi.jpeg" alt="Johan Monsalve" />
+          <div class="marco-foto"></div>
         </div>
-        <div class="project-card">
-          <h3>Diario de Viajes</h3>
-          <p>Desarrollé un diario en Markdown para compartir  destinos turísticos. Use Git creando ramas y resolviendo conflictos, demostrando control de versiones.</p>
-          <p><a href="https://github.com/Johanbadillo/Examen_GitHub_MonsalveJohan" target="_blank">Ver Proyecto</a></p>
-        </div>
-        <div class="project-card">
-          <h3>Simulador de Negocio de Empanadas</h3>
-          <p>Desarrollé un programa en Python básico para gestionar un emprendimiento de empanadas, con funciones para registrar, actualizar, eliminar y verificar disponibilidad de ingredientes, usando una base de datos JSON para persistencia. Implementé Git con ramas para organizar el desarrollo de funcionalidades y resolver conflictos, optimizando la gestión colaborativa.</p>
-          <p><a href="https://github.com/Johanbadillo/Proyecto_Git_MonsalveJohan1" target="_blank">Ver Código</a></p>
-        </div>
-        <div class="project-card">
-          <h3>Gestor de Datos de Cafetería</h3>
-          <p>Desarrollé un programa en Python para gestionar gastos de una cafetería, permitiendo registrar, visualizar, actualizar y eliminar datos de ingredientes, categorías y chefs usando archivos JSON para persistencia. Utilicé Git con ramas para organizar el desarrollo de funcionalidades CRUD, optimizando la gestión colaborativa y el control de inventario.</p>
-          <p><a href="https://github.com/Johanbadillo/Examen_Python_MonsalveJohan" target="_blank">Ver Código</a></p>
-        </div>
+        <p>
+          Soy estudiante de desarrollo de software, apasionado por crear soluciones web funcionales y visualmente atractivas. 
+          Domino <strong>Python básico, Git, HTML, CSS</strong> y <strong>JavaScript básico</strong>, con experiencia en proyectos académicos que incluyen diseños responsivos y animaciones como efectos de hover. 
+          Mi inteligencia emocional me permite adaptarme a cambios rápidamente, analizar situaciones con empatía y colaborar eficazmente en equipo.
+        </p>
       </div>
     </section>
 
-    <section id="skills" class="skills">
-      <h2>Habilidades</h2>
-      <div class="skills-list">
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">Scrum (basico)</span>
-        <span class="skill">Python (Básico)</span>
-        <span class="skill">Git</span>
-        <span class="skill">Adaptación al Cambio</span>
-        <span class="skill">Inteligencia Emocional</span>
-        <span class="skill">Análisis Emocional</span>
-        <span class="skill">Habilidades Sociales</span>
-        
+    <!-- Sección: Proyectos -->
+    <section id="proyectos" class="seccion">
+      <h2 class="titulo-seccion">Proyectos</h2>
+      <div class="grilla-proyectos">
+        <article class="tarjeta-proyecto">
+          <div class="contenido-tarjeta">
+            <h3>Gestor de Gastos Diarios</h3>
+            <p>Python + JSON | Registro, filtrado y reportes por categoría.</p>
+            <a href="https://github.com/Johanbadillo/Python_Proyecto" target="_blank" class="boton-verde">Ver Código</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="contenido-tarjeta">
+            <h3>Diario de Viajes</h3>
+            <p>Markdown + Git | Ramas, merge y resolución de conflictos.</p>
+            <a href="https://github.com/Johanbadillo/Examen_GitHub_MonsalveJohan" target="_blank" class="boton-verde">Ver Proyecto</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="contenido-tarjeta">
+            <h3>Negocio de Empanadas</h3>
+            <p>Python + JSON + Git | CRUD de ingredientes y stock.</p>
+            <a href="https://github.com/Johanbadillo/Proyecto_Git_MonsalveJohan1" target="_blank" class="boton-verde">Ver Código</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="contenido-tarjeta">
+            <h3>Cafetería Manager</h3>
+            <p>Python + JSON | Gestión de chefs e inventario.</p>
+            <a href="https://github.com/Johanbadillo/Examen_Python_MonsalveJohan" target="_blank" class="boton-verde">Ver Código</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Conéctate conmigo</h2>
-      <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/johan-monsalve-204602356/" target="_blank">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
-        </a>
-        <a href="https://instagram.com/johanbadillomj/" target="_blank">
-          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram">
-        </a>
-        <a href="https://wa.me/573018868235" target="_blank">
-          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="WhatsApp">
-        </a>
-        <a href="https://github.com/Johanbadillo" target="_blank">
-          <img src="https://raw.githubusercontent.com/the-userr/GitHub-Icons/master/icons/GitHub.svg" alt="GitHub">
-        </a>
-        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=johanbadillomj@gmail.com&su=Hi,+dear+Johan.&body=I+want+to+contact+you+to%E2%80%A6" target="_blank">
-          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/gmail.svg" alt="Gmail">
-        </a>
+    <!-- Sección: Habilidades -->
+    <section id="habilidades" class="seccion">
+      <h2 class="titulo-seccion">Habilidades</h2>
+      <div class="grilla-habilidades">
+        <span class="etiqueta-habilidad">HTML</span>
+        <span class="etiqueta-habilidad">CSS</span>
+        <span class="etiqueta-habilidad">Python</span>
+        <span class="etiqueta-habilidad">Git</span>
+        <span class="etiqueta-habilidad">Scrum</span>
+        <span class="etiqueta-habilidad">Inteligencia Emocional</span>
+        <span class="etiqueta-habilidad">Adaptación al Cambio</span>
+        <span class="etiqueta-habilidad">Resolución de Conflictos</span>
       </div>
-      <p>
-        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=johanbadillomj@gmail.com&su=Hi,+dear+Johan.&body=I+want+to+contact+you+to%E2%80%A6" target="_blank"><b>johanbadillomj@gmail.com</b></a>
-      </p>
     </section>
-  </div>
 
-  <footer>
-    <p>&copy; 2025 Johan Monsalve. Todos los derechos reservados.</p>
+    <!-- Sección: Contacto -->
+    <section id="contacto" class="seccion">
+      <h2 class="titulo-seccion">Contacto</h2>
+      <div class="iconos-contacto">
+        <a href="https://www.linkedin.com/in/johan-monsalve-204602356/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/johanbadillomj/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/573018868235" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/Johanbadillo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=johanbadillomj@gmail.com&su=Hi,+dear+Johan.&body=I+want+to+contact+you+to…" target="_blank"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <p>© 2025 Johan Monsalve. Todos los derechos reservados. Hecho con amor ❤️ </p>
   </footer>
-
 </body>
+<script src="./script/script.js"></script>
 </html>
