@@ -345,7 +345,7 @@ body {
     .menu-navegacion a { display: block; margin: 0.5rem 0; }
 }
 
-/* ===== 12. MODO CLARO (AZUL ÉPICO) - EFECTOS ADAPTADOS ===== */
+/* ===== 12. MODO CLARO (AZUL) - EFECTOS ADAPTADOS ===== */
 body.modo-claro {
     background: #f0f8ff;
     color: #1e3a8a;
@@ -455,10 +455,6 @@ body.modo-claro .tarjeta-proyecto:hover {
 
 body.modo-claro .contenido-tarjeta h3 {
     color: #1e40af;
-}
-
-body.modo-claro .contenido-tarjeta p {
-    color: #64748b;
 }
 
 body.modo-claro .boton-verde {
