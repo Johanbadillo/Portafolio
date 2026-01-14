@@ -8,10 +8,17 @@
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="shortcut icon" href="./img/portafolio.png" type="image/x-icon">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.35/build/spline-viewer.js"></script>
 </head>
 
 <body>
-
+  <spline-viewer 
+    id="spline-fondo"
+    url="https://prod.spline.design/Ywed2WeUc7VQCVBT/scene.splinecode"
+    events-target="global"
+  ></spline-viewer>
+  <div class="overlay-fondo"></div>
+  
   <!-- BOTÓN TEMA -->
   <button id="boton-tema" class="boton-tema" title="Cambiar tema">
     <i class="fas fa-moon"></i>

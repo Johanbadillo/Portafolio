@@ -20,11 +20,13 @@ body {
 /* ===== 2. BOTÓN TEMA ===== */
 .boton-tema {
     position: fixed;
-    top: 20px; right: 20px;
+    top: 20px;
+    right: 20px;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    width: 50px; height: 50px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     font-size: 1.3rem;
     cursor: pointer;
@@ -50,8 +52,10 @@ body {
 .encabezado-principal::before {
     content: '';
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: radial-gradient(circle at center, rgba(139, 0, 0, 0.3), transparent);
     z-index: 0;
 }
@@ -63,7 +67,8 @@ body {
 
 /* Logo JM */
 .logo-jm {
-    width: 80px; height: 80px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto 1rem;
     font-family: 'Cinzel', serif;
     font-size: 2.5rem;
@@ -91,12 +96,19 @@ body {
 }
 
 @keyframes escribir {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes parpadeo {
-    50% { border-color: transparent; }
+    50% {
+        border-color: transparent;
+    }
 }
 
 .subtitulo {
@@ -135,9 +147,11 @@ body {
 .menu-navegacion a::after {
     content: '';
     position: absolute;
-    width: 0; height: 3px;
+    width: 0;
+    height: 3px;
     background: #8B0000;
-    bottom: -6px; left: 0;
+    bottom: -6px;
+    left: 0;
     border-radius: 2px;
     transition: width 0.3s ease;
 }
@@ -165,7 +179,8 @@ body {
 .titulo-seccion::after {
     content: '';
     display: block;
-    width: 60px; height: 3px;
+    width: 60px;
+    height: 3px;
     background: #8B0000;
     margin: 0.5rem auto;
     border-radius: 2px;
@@ -184,12 +199,14 @@ body {
 
 .foto-perfil {
     position: relative;
-    width: 180px; height: 180px;
+    width: 180px;
+    height: 180px;
     flex-shrink: 0;
 }
 
 .foto-perfil img {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #8B0000;
@@ -198,8 +215,10 @@ body {
 
 .marco-foto {
     position: absolute;
-    top: -10px; left: -10px;
-    width: 100%; height: 100%;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
     border: 2px solid #b8860b;
     border-radius: 50%;
     transform: rotate(45deg);
@@ -231,8 +250,10 @@ body {
 .tarjeta-proyecto::before {
     content: '';
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(135deg, transparent, rgba(139, 0, 0, 0.1));
     opacity: 0;
     transition: opacity 0.3s;
@@ -339,10 +360,24 @@ body {
 
 /* ===== 11. RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .titulo-animado { font-size: 2.5rem; }
-    .contenido-sobre-mi { flex-direction: column; text-align: center; }
-    .foto-perfil { width: 140px; height: 140px; }
-    .menu-navegacion a { display: block; margin: 0.5rem 0; }
+    .titulo-animado {
+        font-size: 2.5rem;
+    }
+
+    .contenido-sobre-mi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 140px;
+        height: 140px;
+    }
+
+    .menu-navegacion a {
+        display: block;
+        margin: 0.5rem 0;
+    }
 }
 
 /* ===== 12. MODO CLARO (AZUL) - EFECTOS ADAPTADOS ===== */
@@ -388,7 +423,8 @@ body.modo-claro .menu-navegacion {
 }
 
 body.modo-claro .menu-navegacion a {
-    color: #1e293b; /* Gris azulado oscuro - excelente contraste */
+    color: #1e293b;
+    /* Gris azulado oscuro - excelente contraste */
     font-weight: 600;
     margin: 0 1.8rem;
     font-size: 1.15rem;
@@ -408,6 +444,7 @@ body.modo-claro .menu-navegacion a::after {
 body.modo-claro .menu-navegacion a:hover::after {
     width: 100%;
 }
+
 /* Títulos */
 body.modo-claro .titulo-seccion {
     color: #1e40af;
@@ -511,6 +548,69 @@ body.modo-claro .contenido-sobre-mi p {
     color: #202020bd;
 }
 
-body.modo-claro .contenido-tarjeta p{
+body.modo-claro .contenido-tarjeta p {
     color: #202020bd;
+}
+
+/* ==========================================================================
+    NUEVO: Fondo 3D + overlay
+========================================================================== */
+
+#spline-fondo {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    /* muy atrás */
+    pointer-events: none;
+    /* clics pasan a través */
+}
+
+.overlay-fondo {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    /* negro semi-transparente - ajústalo (0.3 a 0.6) */
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* En modo claro, reducimos o quitamos el overlay para que se vea mejor */
+body.modo-claro .overlay-fondo {
+    background: rgba(240, 248, 255, 0.76);
+    /* muy claro o quítalo si prefieres */
+    /* o simplemente: display: none; si no quieres overlay en claro */
+}
+
+/* Body ahora sin url inválida */
+body {
+    background: #000;
+    /* color sólido de respaldo */
+    color: #e8e8e8;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.7;
+    /* quitamos overflow-x: hidden; a menos que lo necesites por algo específico */
+    position: relative;
+    transition: all 0.4s ease;
+    min-height: 100vh;
+}
+
+/* Aseguramos que header, nav, main y footer estén por encima del fondo */
+.encabezado-principal,
+.menu-navegacion,
+.contenedor-principal,
+.pie-pagina {
+    position: relative;
+    z-index: 1;
+}
+
+/* Botón tema ya tiene z-index alto, pero por si acaso */
+.boton-tema {
+    z-index: 1000;
+}
+
+/* Opcional: si quieres que el spline responda menos al scroll o zoom */
+#spline-fondo {
+    override-colors: "false"
 }
