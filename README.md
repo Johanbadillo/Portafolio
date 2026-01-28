@@ -23,7 +23,7 @@
 
 ```text
 Frontend:  HTML5 | CSS3 | JavaScript 
-Backend:   Node.js | Express | Python | Json
+Backend:   Java | Spring Boot | Python | Json
 Bases de datos: MongoDB | MySQL
 Herramientas: Git | GitHub | VS Code | Figma
 ```
@@ -46,4 +46,5 @@ Hecho con ❤️ y mucho ☕ por Johan Monsalve <br/><br/>
 <img src="https://img.shields.io/github/followers/Johanbadillo?style=social" alt="GitHub followers"> 
 
 </div>
+
 
